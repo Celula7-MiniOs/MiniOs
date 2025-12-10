@@ -1,4 +1,17 @@
-
+:root{
+    .color1 { #243757 };
+    .color2 { #3a5f6f };
+    .color3 { #dad5b7 };
+    .color4 { #c2b79b };
+    .color5 { #665e52 };
+    /* 
+    .color1 { #262525 };
+    .color2 { #525252 };
+    .color3 { #e6ddbc };
+    .color4 { #822626 };
+    .color5 { #690202 }; 
+    */
+}
 
 body{
     background-color: aqua;
