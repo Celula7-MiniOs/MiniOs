@@ -1,5 +1,147 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); 
 
-
+/* Universal reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+}
 body{
-    background-color: aqua;
+    /* Styles from weather.html*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #665E52;
+    background: linear-gradient(0deg, rgba(102, 94, 82, 1) 0%, rgba(230, 221, 188, 1) 100%);
+}
+
+/* Weather Widget Styles */
+.weather-widget{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: #262525;
+    background: radial-gradient(circle, rgba(38, 37, 37, 1) 0%, rgba(36, 55, 87, 1) 50%, rgba(58, 95, 111, 1) 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.664);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: bg-change 5s linear infinite;
+}
+.weather-widget::before{
+    content: "";
+    position: absolute;
+    width: 580px;
+    height: 580px;
+    border-radius: 50%;
+    border: 1px solid rgba(172, 172, 172, 0.822)
+}
+.weather-info{
+    position: relative;
+    z-index: 10;
+}
+.temperature{
+    font-size: 48px;
+    font-weight: bold;
+    color: #0c0c0c;
+}
+.feel-like{
+    font-size: 16px;
+    color: #ffffff;
+}
+.icon{
+    margin: 10px 0;
+}
+.details{
+    font-size: 14px;
+    color: #ffffff;
+}
+.details span{
+    display: block;
+    margin-bottom: 5px;
+}
+.time{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #0c0c0c;
+}
+.directions{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+.directions span{
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+.directions .north{
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.directions .south{
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.directions .east{
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.directions .west{
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Background Animation */
+@keyframes bg-change {
+    25%{
+        background: #525252;
+        background: radial-gradient(circle, rgba(82, 82, 82, 1) 0%, rgba(130, 38, 38, 1) 50%, rgba(105, 2, 2, 1) 100%);
+    }
+    50%{
+        background: #525252;
+        background: radial-gradient(circle, rgba(82, 82, 82, 1) 0%, rgba(194, 183, 155, 1) 50%, rgba(218, 213, 183, 1) 100%);
+    }
+    75%{
+        background: #262525;
+        background: radial-gradient(circle, rgba(38, 37, 37, 1) 0%, rgba(36, 55, 87, 1) 50%, rgba(58, 95, 111, 1) 100%);
+    }
+}
+/* Header Close Button Styles */
+header{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.headerclose{
+    background-color: #262525;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.664);
+    transition: background-color 0.3s ease;
+}
+.headerclose:hover{
+    background-color: #525252;
+}   
+.headerclose a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
 }
