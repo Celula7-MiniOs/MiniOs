@@ -1,5 +1,5 @@
 
-![Logo](logo.png)
+![Logo](img/logo.png)
 # MiniOS Systems
 
 Este proyecto es una simulación mediante iframe que permite visualizar varias paginas sin tener que refrescar las paginas.
@@ -46,5 +46,18 @@ Or you can execute
 
 #### Alarm
 
-![Screenshot](alarm.jpeg)
+![Screenshot](img/alarm.jpeg)
 
+### Notes
+
+
+#### Homeworks
+
+
+### Weather
+
+
+
+
+
+## 0
