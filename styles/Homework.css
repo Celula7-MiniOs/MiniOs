@@ -1,0 +1,93 @@
+:root{
+    --color1 : #243757;
+    --color2 : #3a5f6f;
+    --color3 : #dad5b7;
+    --color4 : #c2b79b;
+    --color5 : #665e52;
+    --font-style : 
+    /* 
+    .color1 { #262525 };
+    .color2 { #525252 };
+    .color3 { #e6ddbc };
+    .color4 { #822626 };
+    .color5 { #690202 }; 
+    */
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    background-color: var(--color1);
+    margin: 0 ;
+    padding: 0 ;
+    font-size: 20px;
+    font-family: "Funnel Display", sans-serif;
+}
+
+.Encabezado-Homeworks {
+   width: 100%;     
+   background-color: var(--color3); 
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+}
+.Icono{
+    width: 15%;
+    height: 10%;    
+}
+.headertitle{
+    display: flex;
+    align-items: center;
+    margin-left: 450px;
+    font-size: 35px;
+    gap: 1.5rem;
+}
+.headerclose{
+    margin-right: 30px;    
+}
+.headerclose a {
+    text-decoration: none;
+    font-size: 50px;
+    color: #243757;
+}
+.Planner{
+    background-color: var(--color3); 
+    border: outset, var(--color5);
+    padding: 2.5rem;
+    margin: 2.5rem;    
+}
+th{
+    background-color: white;
+}
+td{
+    background-color: var(--color4);
+    text-align: center;
+    padding: 1rem;
+}
+div{
+    text-align: left;
+}
+.Tabla{
+    display: flex;
+}
+.Agregar-tarea{
+    margin-top: 50px;    
+}
+.Agregar-tarea h2{
+    color: var(--color3);
+    text-align: center;
+    padding: 2px;
+    margin-left: 10px;
+}
+.Agregar-tarea form fieldset {
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--color3);
+}
+button{
+    border-color: var(--color2);
+    padding: 2px;
+    margin-left: 10px;
+}
