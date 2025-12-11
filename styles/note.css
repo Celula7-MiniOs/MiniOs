@@ -1,0 +1,99 @@
+:root{
+    --color1 : #243757;
+    --color2 : #3a5f6f;
+    --color3 : #dad5b7;
+    --color4 : #c2b79b;
+    --color5 : #665e52;
+    --font-style : 
+    /* 
+    .color1 { #262525 };
+    .color2 { #525252 };
+    .color3 { #e6ddbc };
+    .color4 { #822626 };
+    .color5 { #690202 }; 
+    */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: var(--color2);
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.notes{
+    width: 50%;
+    height:50px;
+    margin: 20px auto;
+    background-color: var(--color4);
+   border-top-left-radius: 10px;   
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  
+   
+}
+
+
+.notesbar{
+    display: flex;
+    justify-content: space-between;
+
+}
+.title{
+    transform: scale(1);
+}
+.title h2:hover{
+   
+    transform: scale(1.002);
+    color: rgba(255, 255, 255, 0.801);    
+    transition: transform 0.3s;
+}
+
+.notesbar section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 3px;
+}
+
+
+.icons img{
+   
+    gap: 15px;
+    padding: 10px;
+    width: 50px;
+}
+.icons img:hover{
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 8px;
+    cursor: pointer;
+    transform: scale(1.001);
+    transition: transform 0.3s;
+}
+
+
+.write{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.959);
+    border: none;
+    padding: 15px;
+    outline: none;  
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.write span{
+    font-size: 1.8rem;
+}
