@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Lo básico: codificación, responsive y el título -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <title>Alarm</title>
+
+    <!-- Acá conecto el CSS donde vive toda la magia visual -->
+    <link rel="stylesheet" href="/styles/alarm.css">
 </head>
 <body>
-    
+
+<!-- Header simple para el título del sistema -->
+<header>
+    <h1>System of alarm</h1>
+</header>
+
+<!-- 
+  Checkbox oculto:
+  no se ve, pero es el que guarda el estado de la alarma
+  encendida / apagada
+-->
+<input type="checkbox" id="alarm-toggle">
+
+<!-- Zona principal de la alarma -->
+<section class="alarm">
+
+    <!-- 
+      Esta es la "tarjeta" de la alarma.
+      Cuando la alarma se activa, este bloque comienza a vibrar.
+    -->
+    <div class="content-alarm">
+
+        <!-- Imagen representativa de la alarma -->
+        <img src="../img/alarm.png" alt="Alarm-img">
+
+        <!-- 
+          Controles de la alarma:
+          dejo todo junto para que sea más cómodo para el usuario
+        -->
+        <div class="controls">
+
+            <!-- 
+              Este label funciona como botón.
+              Al hacer click, prende o apaga la alarma
+            -->
+            <label for="alarm-toggle" class="alarm-btn">
+                Activate / Deactivate
+            </label>
+
+            <!-- 
+              Control de sonido.
+              El usuario debe darle play manualmente (sin JS no se puede auto-reproducir)
+            -->
+            <audio controls>
+                <source src="../alarm.mp3" type="audio/mpeg">
+            </audio>
+
+        </div>
+    </div>
+
+</section>
+
 </body>
 </html>
