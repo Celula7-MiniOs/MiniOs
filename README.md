@@ -65,7 +65,8 @@ Or you can execute
 ## Screenshots :camera: 
 
 ### Index 
-
+This module is the main part of the problem where the entire project will be executed.
+![Screenshot](img/index.jpeg)
 #### Alarm :alarm_clock: :alarm_clock: :alarm_clock:
 
 This module activates the alarm by generating a sound while moving from side to side.
